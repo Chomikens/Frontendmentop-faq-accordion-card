@@ -1,16 +1,120 @@
-<!doctype html>
-<html lang="pl">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
   <script src="/main.js" type="module"></script>
   <link rel="stylesheet" href="./scss/main.scss">
-  <title>Vite template</title>
+
 </head>
 
 <body>
+  <main>
+
+    <div class="container flex">
+      <div class="flex__images">
+        <picture>
+          <source media="(min-width: 500px)" srcset="/images/illustration-woman-online-desktop.svg" width="650px"
+            height="279px">
+          <img src="./images/illustration-woman-online-mobile.svg" alt="Description of the image" width="230px"
+            height="180px">
+        </picture>
+
+
+      </div>
+
+      <div class="flex__faq">
+        <h1 class="flex__faq__heading">FAQ</h1>
+        <div class="flex__faq--wrapper">
+
+          <article class="flex__faq__item">
+            <header class="faq__item__header">
+              <h2 class="faq__item__question">
+                How many team members can I invite?
+              </h2>
+              <span class="faq__item__mark">T</span>
+            </header>
+            <div class="faq__item__content">
+              <div class="faq__item__content--inner">
+                <p>You can invite up to 2 additional users on the Free plan. There is no limit on
+                  team members for the Premium plan.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flex__faq__item">
+            <header class="faq__item__header">
+              <h2 class="faq__item__question">
+                What is the maximum file upload size?
+              </h2>
+              <span class="faq__item__mark">T</span>
+            </header>
+            <div class="faq__item__content">
+              <div class="faq__item__content--inner">
+                <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="flex__faq__item">
+            <header class="faq__item__header">
+              <h2 class="faq__item__question">
+                How do I reset my password?
+              </h2>
+              <span class="faq__item__mark">T</span>
+            </header>
+            <div class="faq__item__content">
+              <div class="faq__item__content--inner">
+                <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                  A reset link will be emailed to you.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flex__faq__item">
+            <header class="faq__item__header">
+              <h2 class="faq__item__question">
+                Can I cancel my subscription?
+              </h2>
+              <span class="faq__item__mark">T</span>
+            </header>
+            <div class="faq__item__content">
+              <div class="faq__item__content--inner">
+                <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="flex__faq__item">
+            <header class="faq__item__header">
+              <h2 class="faq__item__question">
+                Do you provide additional support?
+              </h2>
+              <span class="faq__item__mark">T</span>
+            </header>
+            <div class="faq__item__content">
+              <div class="faq__item__content--inner">
+                <p> Chat and email support is available 24/7. Phone lines are open during normal business hours. </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </main>
+
+
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 @use 'sass:math';
 @use 'sass:map';
 @use 'breakpoints' as *;
+@use 'colors' as *;
 
 @mixin mq($size) {
 	@if map.has-key($breakpoints, $size) {
@@ -20,4 +21,8 @@
 	} @else {
 		@error 'the keyword #{$size} is not in the $breakpoints map';
 	}
+}
+
+@mixin gradient($deg: 180deg, $colors...) {
+	background: linear-gradient($deg, $colors...);
 }

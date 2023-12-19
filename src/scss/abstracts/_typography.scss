@@ -1,11 +1,12 @@
-$ff-sans: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$ff-sans: 'Kumbh Sans', sans-serif;
 
 $font-sizes: (
-	900: 3.75rem,
-	800: 3rem,
-	600: 1.5rem,
-	500: 1.3125rem,
-	400: 1.125rem,
+	default: 0.75rem,
+	default-mobile: 0.8125rem,
+	default-heading: 0.875rem,
+	main-heading: 2rem,
 );
 
 $fw-400: 400;

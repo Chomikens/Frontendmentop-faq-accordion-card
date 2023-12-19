@@ -1,12 +1,17 @@
 $colors: (
 	neutral: (
-		light: white,
-		normal: gray,
-		dark: black,
+		dark: hsl(237, 12%, 33%),
+		light: hsl(240, 6%, 50%),
 	),
 	primary: (
-		light: lightblue,
-		normal: blue,
-		dark: darkblue,
+		text-dark: hsl(238, 29%, 16%),
+		soft-red: hsl(14, 88%, 65%),
+	),
+	gradient: (
+		violet: hsl(273, 75%, 66%),
+		blue: hsl(240, 73%, 65%),
+	),
+	dividers: (
+		gray: hsl(240, 5%, 91%),
 	),
 );

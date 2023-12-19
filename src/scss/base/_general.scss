@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+
+	font-family: $ff-sans;
+	font-size: fontSizes(default);
+	font-weight: $fw-400;
+	@include gradient(180deg, getColor(gradient, violet), getColor(gradient, blue));
+
+	overflow: hidden;
+}
