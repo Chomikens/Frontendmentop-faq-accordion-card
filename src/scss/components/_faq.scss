@@ -62,7 +62,7 @@
 			transform: translateX(-50%);
 
 			@include mq(medium) {
-				bottom: -50%;
+				bottom: -20%;
 				left: 50%;
 
 				min-width: 780px;
