@@ -1,6 +1,111 @@
 @use '../abstracts/' as *;
 
+.box-postion {
+	position: relative;
+	width: inherit;
+	height: inherit;
+	@include mq(medium) {
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0%;
+			width: 125px;
+			aspect-ratio: 1;
+			transform: translate(-50%, -38%);
+
+			background-image: url('../../images/illustration-box-desktop.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			z-index: 3;
+		}
+	}
+}
+
 .flex {
+	position: relative;
+
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
+	column-gap: 5rem;
+
+	min-height: 535px;
+	padding-inline: 0.64rem;
+	border-radius: 23px;
+
+	background-color: getColor(neutral, white);
+
+	@include mq(medium) {
+		min-height: 509px;
+
+		overflow: hidden;
+	}
+
+	> * {
+		flex: 1 1 100%;
+		@include mq(medium) {
+			flex: 1 1 calc(50% - 5rem);
+		}
+	}
+
+	&__images {
+		position: relative;
+		z-index: 1;
+		max-width: 237px;
+
+		@include mq(small) {
+			max-width: 300px;
+		}
+
+		transform: translate(0, -50%);
+		@include mq(medium) {
+			max-width: 471px;
+
+			transform: translate(-15%, 0);
+		}
+		&::before {
+			content: '';
+
+			position: absolute;
+			bottom: -90%;
+			left: 50%;
+
+			width: 100%;
+			aspect-ratio: 1;
+
+			background-image: url('../../images/bg-pattern-mobile.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+
+			transform: translateX(-50%);
+
+			@include mq(medium) {
+				bottom: -50%;
+				left: 50%;
+
+				min-width: 780px;
+				height: auto;
+
+				background-image: url('../../images/bg-pattern-desktop.svg');
+				background-size: contain;
+				background-position: center right;
+
+				transform: translate(-70%, 10%);
+				z-index: -1;
+			}
+		}
+	}
+
+	&__faq {
+		transform: translate(0, -15%);
+		@include mq(small) {
+			transform: translate(0, -25%);
+		}
+		@include mq(medium) {
+			transform: translate(0);
+			padding-inline-end: 5rem;
+		}
+	}
 }
