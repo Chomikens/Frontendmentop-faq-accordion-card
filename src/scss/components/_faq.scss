@@ -117,16 +117,12 @@
 
 .flex__faq {
 	&__heading {
-		padding-block: 1.75rem 2.375rem;
+		padding-block-end: 1.75rem;
 
 		font-size: fontSizes(main-heading);
 		text-align: center;
 		@include mq(small) {
 			text-align: left;
-		}
-
-		@include mq(medium) {
-			padding-block: 4.0625rem 2.8125rem;
 		}
 	}
 
