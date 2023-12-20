@@ -54,7 +54,7 @@
 			width: 100%;
 			aspect-ratio: 1;
 
-			background-image: url('../../images/bg-pattern-mobile.svg');
+			background-image: url('../images/bg-pattern-mobile.svg');
 			background-repeat: no-repeat;
 			background-size: contain;
 
@@ -67,7 +67,7 @@
 				min-width: 780px;
 				height: auto;
 
-				background-image: url('../../images/bg-pattern-desktop.svg');
+				background-image: url('../images/bg-pattern-desktop.svg');
 				background-size: contain;
 				background-position: center right;
 
@@ -105,7 +105,7 @@
 			aspect-ratio: 1;
 			transform: translate(-50%, -38%);
 
-			background-image: url('../../images/illustration-box-desktop.svg');
+			background-image: url('../images/illustration-box-desktop.svg');
 			background-repeat: no-repeat;
 			background-size: contain;
 			z-index: 3;
