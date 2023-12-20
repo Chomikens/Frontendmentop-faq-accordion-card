@@ -31,8 +31,9 @@
 
 	&__images {
 		position: relative;
-		z-index: 1;
+		pointer-events: none;
 		max-width: 237px;
+		z-index: 1;
 
 		@include mq(small) {
 			max-width: 300px;
