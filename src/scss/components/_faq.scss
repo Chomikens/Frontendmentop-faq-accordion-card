@@ -8,8 +8,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	column-gap: 5rem;
-
+	column-gap:3rem;
 	min-height: 535px;
 	padding-inline: 0.64rem;
 	border-radius: 23px;
@@ -80,14 +79,14 @@
 
 	&__faq {
 		max-width: 370px;
+		padding-inline: 2rem;
+		padding-block:1rem;
 		transform: translate(0, -15%);
-		padding-inline: 1rem;
 		@include mq(small) {
 			transform: translate(0, -25%);
 		}
 		@include mq(medium) {
 			transform: translate(0);
-			padding-inline: 0 5rem;
 		}
 	}
 }
@@ -147,13 +146,19 @@
 			transform: rotate(0deg);
 			transition: transform 0.3s ease-in-out;
 		}
+
+		&:focus{
+			outline: none;
+			.faq__item__question {
+			color:getColor(primary, soft-red);
+			font-weight: $fw-700;
+			}
+		}
 	}
 
 	&__question {
 		font-weight: $fw-400;
 		font-size: fontSizes(default-mobile);
-		@include mq(small) {
-		}
 	}
 
 	&__content {
