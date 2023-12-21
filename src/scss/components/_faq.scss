@@ -81,12 +81,13 @@
 	&__faq {
 		max-width: 370px;
 		transform: translate(0, -15%);
+		padding-inline: 1rem;
 		@include mq(small) {
 			transform: translate(0, -25%);
 		}
 		@include mq(medium) {
 			transform: translate(0);
-			padding-inline-end: 5rem;
+			padding-inline: 0 5rem;
 		}
 	}
 }
